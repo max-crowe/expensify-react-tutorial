@@ -3,8 +3,9 @@
   "packageManager": "yarn@3.3.1",
   "scripts": {
     "serve": "yarn run live-server public",
-    "build": "webpack",
-    "dev-server": "yarn run webpack-dev-server",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.production.js",
+    "dev-server": "yarn run webpack-dev-server --config webpack.dev.js",
     "test": "jest --config=jest.config.json"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "enzyme-to-json": "3",
     "jest": "^29.5.0",
     "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.7.6",
     "moment": "^2.29.4",
     "node-sass": "^8.0.0",
     "normalize.css": "^8.0.1",
@@ -38,7 +40,8 @@
     "validator": "13.9.0",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.12.0"
+    "webpack-dev-server": "^4.12.0",
+    "webpack-merge": "^5.9.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6"
