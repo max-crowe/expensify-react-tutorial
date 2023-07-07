@@ -36,4 +36,5 @@ module.exports = {
       filename: "styles.css"
     })
   ],
+  target: "web"
 };

@@ -4,7 +4,7 @@
   "scripts": {
     "build:dev": "webpack --config webpack.dev.js",
     "build:prod": "webpack --config webpack.production.js",
-    "dev-server": "yarn run webpack-dev-server --config webpack.dev.js",
+    "dev-server": "yarn run webpack-dev-server --config webpack.dev.js --mode development --env development",
     "start": "node server/server.js",
     "test": "jest --config=jest.config.json"
   },
@@ -21,6 +21,7 @@
     "moment": "^2.29.4",
     "node-sass": "^8.0.0",
     "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "raf": "^3.4.1",
     "react": "16",
     "react-dates": "^21.8.0",
